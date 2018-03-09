@@ -25,6 +25,7 @@
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(.25);
 		transition: all .4s .2s;
+		visibility: hidden;
 
 		@include respond(tab-land) {
 			display: block;
@@ -102,6 +103,7 @@
 	&:target &__content {
 		opacity: 1;
 		transform: translate(-50%, -50%) scale(1);
+		visibility: visible;
 	}
 
 	&__close {
