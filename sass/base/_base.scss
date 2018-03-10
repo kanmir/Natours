@@ -27,6 +27,10 @@ html {
 		font-size: 75%; // 1rem == 12px, 12/16 == 75%
 	}
 
+	@include respond(ultra) {
+		font-size: 100%; // 1rem == 16px, 16/16 == 100%
+	}
+
 }
 
 body {

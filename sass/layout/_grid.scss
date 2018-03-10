@@ -10,6 +10,10 @@
 		}
 	}
 
+	@include respond(big-desktop) {
+		max-width: 150rem;
+	}
+
 	@include respond(tab-port) {
 		max-width: 70rem;
 		padding: 0 3rem;

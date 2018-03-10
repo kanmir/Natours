@@ -2,18 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
         <link rel="stylesheet" href="css/icon-font.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">  
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
-    <body>
 
+    <body>
+        <!-- Navigation -->
         <div class="navigation">
             <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
             <label for="navi-toggle" class="navigation__button">
@@ -31,10 +29,9 @@
                     <li class="navigation__item"><a href="" class="navigation__link"><span>05</span>Book now</a></li>
                 </ul>
             </nav>
-
         </div>
 
-
+        <!-- Header -->
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -48,10 +45,10 @@
 
                 <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
             </div>
-
         </header>
 
         <main>
+            <!-- About -->
             <section class="section-about">
                 <div class="u-center-text u-mb-big">
                     <h2 class="heading-secondary">
@@ -77,21 +74,36 @@
 
                         <a href="#" class="btn-text">Learn more &rarr;</a>
                     </div>
+
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                            <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 1"
+                                 class="composition__photo composition__photo--p1"
+                                 src="img/nat-1-large.jpg">
+
+                            <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 2"
+                                 class="composition__photo composition__photo--p2"
+                                 src="img/nat-2-large.jpg">
+
+                            <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                                 alt="Photo 3"
+                                 class="composition__photo composition__photo--p3"
+                                 src="img/nat-3-large.jpg">
                         </div>
                     </div>
                 </div>
                 
             </section>
 
+            <!-- Features -->
             <section class="section-features">
                 
                 <div class="row">
-
                     <div class="col-1-of-4">
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-world"></i>
@@ -123,10 +135,11 @@
                             <p class="feature-box__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis ex aut tempore expedita tenetur blanditiis!</p>
                         </div>
                     </div>
-
                 </div>
+
             </section>
 
+            <!-- Our tours -->
             <section class="section-tours">
                 <div class="u-center-text u-mb-big">
                     <h2 class="heading-secondary" id="section-tours">
@@ -135,6 +148,7 @@
                 </div>
 
                 <div class="row">
+                    <!-- Card #1 -->
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -172,6 +186,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card #2 -->
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -209,6 +225,8 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Card #3 -->
                     <div class="col-1-of-3">
                         <div class="card">
                             <div class="card__side card__side--front">
@@ -255,7 +273,7 @@
 
             </section>
 
-
+            <!-- Stories -->
             <section class="section-stories">
 
                 <div class="bg-video">
@@ -309,7 +327,7 @@
 
             </section>
 
-            
+            <!-- Book now -->
             <section class="section-book">
 
                 <div class="row">
@@ -365,9 +383,15 @@
 
         </main>
 
+        <!-- Footer -->
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+                <picture class="footer__logo">
+                    <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png" >
+                </picture>
+                
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -391,6 +415,7 @@
         </footer>
 
 
+        <!-- Popup window -->
         <div class="popup" id="popup">
             <div class="popup__content">
                 <div class="popup__left">

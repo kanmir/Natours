@@ -19,13 +19,15 @@
 600 - 900px			Tablet portrait mode
 900 - 1200px		Tablet landscape mode
 1200 - 1800px		Desktop (our standart styles)
-1800 - infinity 	Big desctop
+1800 - 3200 		Big desctop
+3200 + 				UltraHD
 
 $breakpoint argument choises:
 - phone
 - tab-port
 - tab-land
 - big-desktop
+- ultra
 
 ORDER: Base + typography > general layout + grid > page layout > components
 
@@ -43,5 +45,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 	}
 	@if $breakpoint == big-desktop {
 		@media (min-width: 112.5em) { @content } 	//1800px
+	}
+	@if $breakpoint == ultra {
+		@media (min-width: 200em) { @content } 	//3200px
 	}
 }
