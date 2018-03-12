@@ -635,7 +635,7 @@ body {
     background-color: #fff;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    display: table;
+    display: none;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
@@ -691,6 +691,7 @@ body {
     opacity: 1;
     visibility: visible; }
   .popup:target .popup__content {
+    display: table;
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
     visibility: visible; }

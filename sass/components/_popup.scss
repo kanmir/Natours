@@ -20,7 +20,7 @@
 		background-color: $color-white;
 		box-shadow: 0 2rem 4rem rgba($color-black, .2);
 		border-radius: 3px;
-		display: table;
+		display: none;
 		overflow: hidden;
 		opacity: 0;
 		transform: translate(-50%, -50%) scale(.25);
@@ -33,7 +33,7 @@
 			background-image: linear-gradient(to right,
 	 rgba($color-white, .7) 0%,
 	 rgba($color-white, .7) 100%),
-	url(../img/nat-8.jpg);
+	 url(../img/nat-8.jpg);
 		}
 	}
 
@@ -101,6 +101,7 @@
 	}
 
 	&:target &__content {
+		display: table;
 		opacity: 1;
 		transform: translate(-50%, -50%) scale(1);
 		visibility: visible;
